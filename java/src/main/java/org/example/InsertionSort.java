@@ -9,6 +9,9 @@ public class InsertionSort {
     }
 
     private void insert(int i, Comparable[] a) {
+        for (int j = i; j > 0; j--) {
+            swap(a, j, j - 1);
+        }
         //Inserts the 'Transition element' into its correct position in the sorted portion of the array.
         //TODO: TO BE IMPLEMENTED
     }
